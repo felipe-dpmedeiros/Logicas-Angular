@@ -12,6 +12,10 @@ import { Component } from '@angular/core';
 export class Exercicio1Component {
   mes:number = 1;
 
+  trocarMes(valor:string): void {
+    this.mes = parseInt(valor);
+  }
+
   trocarValor(event:Event) {
     const elementoSelecionado = event.target as HTMLSelectElement
     this.mes = parseInt(elementoSelecionado.value);

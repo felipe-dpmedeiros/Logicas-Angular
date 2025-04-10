@@ -1,6 +1,9 @@
 <h2>Exercicio1</h2>
 
-<label for="selector">Selecione um valor:</label>
+<input type="number" #campoMes placeholder="Digite o numero do mês">
+<button (click)="trocarMes(campoMes.value)">Aplicar</button>
+
+<!-- <label for="selector">Selecione um valor:</label>
 <select id="selector" (change)="trocarValor($event)">
   <option value="1">1</option>
   <option value="2">2</option>
@@ -14,7 +17,7 @@
     <option value="10">10</option>
   <option value="11">11</option>
   <option value="12">12</option>
-</select>
+</select> -->
 
 @switch (mes) {
   @case (1) {
