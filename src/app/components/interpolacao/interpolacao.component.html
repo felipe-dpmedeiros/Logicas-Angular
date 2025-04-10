@@ -1,0 +1,27 @@
+<p>interpolação</p>
+
+<p>Nome: {{name}}</p>
+<p>Idade: {{age}}</p>
+<p>Profissão: {{job}}</p>
+
+<h2>Objeto</h2>
+<p>Carro: {{car.make}}, {{car.model}}</p>
+
+<h2>Acessar o Array</h2>
+
+<p>{{hobbies[0]}}</p>
+<p>{{hobbies[1]}}</p>
+<p>{{hobbies[2]}}</p>
+
+<ul>
+  <!-- For do angular 17 -->
+  @for (hobbie of hobbies; track $index) {
+    <li>{{hobbie}}</li>
+  }
+</ul>
+
+<img src="{{imageUrl}}" alt="carrofoda">
+
+<img [src]="imageUrl">
+
+

@@ -1,0 +1,116 @@
+<p>control-flow!</p>
+
+vamos mostrar a diferenca entre o angular 16 e o 17
+
+<h2>Angular 16</h2>
+
+<div *ngIf="mostrar">
+  <p>Será mostrado caso a variável mostrar seja verdadeiro</p>
+</div>
+
+<h2 *ngIf="color ==='green'" ngClass="color-green">
+    O palmeiras não tem e nunca terá mundial
+    A cor é verde
+</h2>
+
+<h2>Else</h2>
+
+<div *ngIf="color == 'red'; else elseBlock">
+    <p>cor verde</p>
+</div>
+
+<ng-template #elseBlock>
+  <p>Não é verdade</p>
+</ng-template>
+
+
+<h2>Laço para Angular 16</h2>
+
+<ul>
+  <li *ngFor="let cor of cores">
+    {{cor}}
+  </li>
+</ul>
+
+<h2>Switch para angular 16</h2>
+
+<label for="selector">Selecione um valor:</label>
+<select id="selector" (change)="trocarValor($event)">
+  <option value="um">1</option>
+  <option value="dois">2</option>
+  <option value="tres">3</option>
+</select>
+
+<div [ngSwitch]="itemSelecionado">
+  <p *ngSwitchCase="'um'">Você selecionou o número um</p>
+  <p *ngSwitchCase="'dois'">Você selecionou o número dois</p>
+  <p *ngSwitchCase="'tres'">Você selecionou o número três</p>
+</div>
+<hr>
+
+<h2>Angular 17</h2>
+@if(color == "green") {
+  <p ngClass="color-green">Aqui é verde</p>
+}
+@else {
+  <p>Não é verde</p>
+}
+
+<h2>Laço para o Angular 17</h2>
+<ul>
+@for(cor of cores; track $index) {
+  <li>{{cor}} - {{$index}}</li>
+}
+</ul>
+
+
+<h2>Switch Angular 17</h2>
+
+<label for="selector">Selecione um valor:</label>
+<select id="selector" (change)="trocarValor($event)">
+  <option value="um">1</option>
+  <option value="dois">2</option>
+  <option value="tres">3</option>
+</select>
+
+@switch (mes) {
+  @case (1) {
+    Janeiro
+  }
+  @case (2) {
+    Fevereiro
+  }
+  @case (3) {
+    Março
+  }
+  @case (4) {
+    Abril
+  }
+  @case (5) {
+    Maio
+  }
+  @case (6) {
+    Julho
+  }
+  @case (7) {
+    Junho
+  }
+  @case (8) {
+    Agosto
+  }
+  @case (9) {
+    Setembro
+  }
+  @case (10) {
+    Outubro
+  }
+  @case (11) {
+    Novembro
+  }
+  @case (12) {
+    Dezembro
+  }
+  @default {
+    <p>Mês não encontrado!</p>
+  }
+}
