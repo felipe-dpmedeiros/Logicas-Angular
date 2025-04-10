@@ -1,0 +1,10 @@
+<h3>Exercicio2</h3>
+
+<ul>
+    @for (item of itens; track $index) {
+        <li>{{ item }} - {{$index}}</li>
+
+    } @empty {
+        <h3>Nenhum item na lista</h3>
+    }
+</ul>
