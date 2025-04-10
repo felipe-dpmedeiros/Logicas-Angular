@@ -1,0 +1,13 @@
+.color-green{
+    color: rgb(164, 255, 164);
+    background-color: green;
+    width: 100px;
+    padding: 5px;
+
+}
+.color-red{
+    color: rgb(255, 165, 165);
+    background-color: red;
+    width: 100px;
+    padding: 5px;
+}

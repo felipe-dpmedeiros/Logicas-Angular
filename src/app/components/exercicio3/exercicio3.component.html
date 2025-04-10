@@ -1,0 +1,12 @@
+<h2>Exercicio3</h2>
+
+<button (click)="aumentarIdade($event)">Add idade</button>
+<button (click)="diminuirIdade($event)">Rm idade</button>
+
+<p>{{idade}}</p>
+
+@if(idade >= 18) {
+    <p ngClass="color-green">Acesso permitido</p>
+}@else {
+    <p ngClass="color-red">Acesso negado</p>
+}
