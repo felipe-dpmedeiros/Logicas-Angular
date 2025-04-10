@@ -1,0 +1,57 @@
+<label for="selector">Selecione um valor:</label>
+<select id="selector" (change)="trocarValor($event)">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+    <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+    <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+    <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+</select>
+
+@switch (mes) {
+  @case (1) {
+    <h3>Janeiro</h3>
+  }
+  @case (2) {
+    <h3>Fevereiro</h3>
+  }
+  @case (3) {
+    <h3>Março</h3>
+  }
+  @case (4) {
+    <h3>Abril</h3>
+  }
+  @case (5) {
+    <h3>Maio</h3>
+  }
+  @case (6) {
+    <h3>Julho</h3>
+  }
+  @case (7) {
+    <h3>Junho</h3>
+  }
+  @case (8) {
+    <h3>Agosto</h3>
+  }
+  @case (9) {
+    <h3>Setembro</h3>
+  }
+  @case (10) {
+    <h3>Outubro</h3>
+  }
+  @case (11) {
+    <h3>Novembro</h3>
+  }
+  @case (12) {
+    <h3>Dezembro</h3>
+  }
+  @default {
+    <p>Mês não encontrado!</p>
+  }
+}
